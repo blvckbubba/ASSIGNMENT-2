@@ -1,0 +1,265 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* GENERAL STYLES*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 80%;
+  max-height: 100%;
+}
+.left-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 22rem;
+  max-height: 15rem;
+  font-size: 12px;
+  margin: -5rem -2rem 0 5rem
+}
+.mobile-view {
+  display: none;
+}
+p {
+  opacity: 0.5;
+}
+img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  max-height: 50rem;
+  margin: 5rem
+}
+.grid-div1, .grid-div2, .grid-div3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  margin: 1rem;
+}
+.DateOfBirth {
+  position: relative;
+}
+.DateOfBirth i {
+  position: absolute;
+  right: 20px; 
+  top: 47px;
+  opacity: 0.3;
+}
+.FirstName, .Gender, .Weight {
+  margin-right: 1rem;
+}
+.column-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1rem;
+}
+.column-div select {
+  width: 31rem;
+}
+.column-div input {
+  width: 31rem;
+}
+input, select, label {
+  display: block;
+  margin-top: 0.5rem;
+}
+input, select {
+  height: 2.5rem;
+  width: 15rem;
+  border: 0;
+  background-color: #f5f5f5f6;
+}
+.pass-word {
+  position: relative;
+}
+.pass-word i {
+  position: absolute;
+  right: 20px; 
+  top: 47px;
+   opacity: 0.3;
+}
+
+button {
+  background-color: aquamarine;
+  border: 0;
+  border: 0;
+  width: 31rem;
+  height: 2.5rem;
+  margin: 1rem;
+  font-size: 20px;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: aqua;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 1rem;
+}
+
+/* FOR TABLETS/LAPTOPS */
+
+ @media only screen and (max-width: 1024px) {
+  main {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 80%;
+  max-height: 100%;
+}
+.left-div {
+  margin: 5rem 5rem -4rem -6rem;
+}
+
+/* FOR MOBILE PHONE */
+}
+@media only screen and (max-width: 500px) {
+  main {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 80%;
+  max-height: 150%;
+}
+.left-div {
+  margin: 10rem 2rem 0.5rem 1rem;
+}
+.desktop-view {
+  display: none;
+}
+.mobile-view {
+  display: contents;
+  opacity: 0.5;
+}
+p {
+  opacity: 0.5;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  max-height: 50rem;
+  max-width: 50rem;
+  margin: 1rem
+}
+.grid-div1, .grid-div2, .grid-div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; 
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+.DateOfBirth {
+  position: relative;
+}
+.DateOfBirth i {
+  position: absolute;
+  right: 20px; 
+  top: 47px;
+  opacity: 0.3;
+}
+.grid-div1 {
+  margin-bottom: -1rem;
+}
+.grid-div3 {
+  margin-top: -1rem;
+}
+.column-div {
+  margin-left: 2rem;
+  margin-top: -1rem;
+}
+input, select {
+  height: 2.5rem;
+  width: 18rem;
+}
+.column-div select {
+  width: 18rem;
+}
+.column-div input {
+  width: 18rem;
+}
+.pass-word {
+  position: relative;
+}
+.pass-word i {
+  position: absolute;
+  right: 35px; 
+  top: 47px;
+  opacity: 0.3;
+}
+button {
+  background-color: aquamarine;
+  border: 0;
+  border: 0;
+  width: 18rem;
+  height: 2.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+  font-size: 20px;
+}
+footer {
+  margin-bottom: 3rem;
+}

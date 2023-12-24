@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  font awesome link  -->
+    <script
+      src="https://kit.fontawesome.com/6d783c61b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style3.css" />
+    <title>Assignment1</title>
+  </head>
+  <body>
+    <main>
+      <section class="left-div">
+        <img src="./pemo.png" alt="logo pic" />
+        <div>
+          <h2>For Individuals</h2>
+          <p class="desktop-view">
+            Start benefiting from the wellness experience, for companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+          <p class="mobile-view">
+            Inspiring wholesome harmony for the mind, body and spirit for
+            everyone, everywhere
+          </p>
+        </div>
+      </section>
+      <section class="form-div">
+        <form action="" method="post">
+          <div class="grid-div1">
+            <div class="FirstName">
+              <label for="FirstName" class="grid"> First Name </label>
+              <input
+                type="text"
+                required
+                placeholder="&nbsp; Tolu"
+                name="FirstName"
+                id="FirstName"
+                size="50"
+              />
+            </div>
+            <div class="LastName">
+              <label for="LastName" class="grid"> Last Name </label>
+              <input
+                type="text"
+                required
+                placeholder=""
+                name="LastName"
+                id="LastName"
+                size="50"
+              />
+            </div>
+          </div>
+          <div class="grid-div2">
+            <div class="Gender">
+              <label for="Gender" id="" class="grid">Gender</label>
+              <select name="Gender" id="Gender" required class="gender">
+                <option value="" disabled selected hidden>&nbsp; Select here</option>
+                <option value="Male" id="Gender">Male</option>
+                <option value="Female" id="Gender">Female</option>
+              </select>
+            </div>
+            <div class="DateOfBirth">
+              <label for="DateOfBirth" class="grid">Date Of Birth</label>
+              <input type="text" required placeholder="&nbsp; Select here" id="DateOfBirth" />
+              <i class="fa-solid fa-calendar-days"></i>
+            </div>
+          </div>
+          <div class="grid-div3">
+            <div class="Weight">
+              <label for="Weight" class="grid"> Weight(KG)</label>
+              <input
+                type="number"
+                placeholder="&nbsp; Enter Weight"
+                id="Weight"
+                name="Weight"
+              />
+            </div>
+            <div class="Height">
+              <label for="Height" class="grid"> Height(CM)</label>
+              <input
+                type="number"
+                placeholder="&nbsp; Enter height here"
+                id="Height"
+                name="Height"
+              />
+            </div>
+          </div>
+          <div class="column-div">
+            <div>
+              <label for="Activity"> Activity Level </label>
+              <select name="Activity" id="Activity">
+                <option value="" disabled selected hidden>&nbsp; Select here</option>
+                <option value="Activity1" id="Activity"></option>
+                <option value="Activity2" id="Activity"></option>
+              </select>
+            </div>
+            <div class="pass-word">
+              <label for="password" class="row">Password </label>
+              <input type="password" required id="password" />
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </div>
+          <button type="submit" value="register">Register</button>
+        </form>
+        <footer>
+          <p>
+            By clicking on Register, you agree to our
+            <a href="#">Terms of Use </a> and our
+            <a href="#"> Privacy Policy </a>
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
